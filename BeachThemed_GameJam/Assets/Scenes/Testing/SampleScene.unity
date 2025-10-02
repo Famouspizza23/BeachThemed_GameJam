@@ -18141,9 +18141,6 @@ MonoBehaviour:
   startingPointsTeamB:
   - {fileID: 1029440492}
   - {fileID: 1648261816}
-  playerLayers:
-  - serializedVersion: 2
-    m_Bits: 8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

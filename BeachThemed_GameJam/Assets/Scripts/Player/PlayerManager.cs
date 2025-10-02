@@ -39,13 +39,15 @@ public class PlayerManager : MonoBehaviour
 
         PlayerController pController = player.GetComponent<PlayerController>();
 
-        Transform playerParent = player.transform.parent;
+        Transform playerTransform = player.transform.root;
+
+        Vector3 spawnPos = Vector3.zero;
 
         if (pController.TeamA)
         {
             if (teamASpawnIndex < startingPointsTeamA.Count)
             {
-                playerParent.position = startingPointsTeamA[teamASpawnIndex].position;
+                spawnPos = startingPointsTeamA[teamASpawnIndex].position;
                 teamASpawnIndex++;
             }
             else
@@ -57,7 +59,7 @@ public class PlayerManager : MonoBehaviour
         {
             if (teamBSpawnIndex < startingPointsTeamB.Count)
             {
-                playerParent.position = startingPointsTeamB[teamBSpawnIndex].position;
+                spawnPos = startingPointsTeamB[teamBSpawnIndex].position;
                 teamBSpawnIndex++;
             }
             else
@@ -65,5 +67,9 @@ public class PlayerManager : MonoBehaviour
                 Debug.LogWarning("No more spawn points for Team B!");
             }
         }
+
+        playerTransform.SetPositionAndRotation(spawnPos, Quaternion.identity);
+
+        Debug.Log($"Spawned {player.name} at {spawnPos}");
     }
 }

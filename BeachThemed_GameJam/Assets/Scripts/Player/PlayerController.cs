@@ -25,17 +25,6 @@ public class PlayerController : MonoBehaviour
         inputActions = this.GetComponent<PlayerInput>().actions;
         player = inputActions.FindActionMap("Player");
         //gameActions = new GameActions();
-
-        randomTeamSet = UnityEngine.Random.Range(1, 2);
-
-        if(randomTeamSet == 1)
-        {
-            ChooseTeamA();
-        }
-        if(randomTeamSet == 2)
-        {
-            ChooseTeamB();
-        }
     }
 
     private void OnEnable()
