@@ -11,9 +11,9 @@ TagManager:
   - Players
   - Water
   - UI
-  - 
-  - 
-  - 
+  - PMenu
+  - PlayerBlock
+  - Balloon
   - 
   - 
   - 
@@ -40,4 +40,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: New Layer 1
+    uniqueID: 1120853511
     locked: 0

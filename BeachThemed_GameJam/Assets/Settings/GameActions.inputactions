@@ -24,7 +24,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Pickup/Throw",
+                    "name": "PickupThrow",
                     "type": "Button",
                     "id": "f3b4f707-8a1e-4452-aef6-2d1f3cef1116",
                     "expectedControlType": "Button",
@@ -138,7 +138,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pickup/Throw",
+                    "action": "PickupThrow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -149,14 +149,14 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Pickup/Throw",
+                    "action": "PickupThrow",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
                     "id": "8ba7f92b-bebe-459c-8b76-87149241d432",
-                    "path": "<Gamepad>/buttonSouth",
+                    "path": "<Gamepad>/start",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -167,18 +167,7 @@
                 {
                     "name": "",
                     "id": "9fde3857-f45d-46be-8950-45b428ce290f",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Join",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "437b6060-0d47-47cc-b962-7f28a6a7cfcf",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

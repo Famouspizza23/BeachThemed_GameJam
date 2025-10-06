@@ -46,7 +46,7 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Pickup/Throw"",
+                    ""name"": ""PickupThrow"",
                     ""type"": ""Button"",
                     ""id"": ""f3b4f707-8a1e-4452-aef6-2d1f3cef1116"",
                     ""expectedControlType"": ""Button"",
@@ -160,7 +160,7 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Pickup/Throw"",
+                    ""action"": ""PickupThrow"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -171,14 +171,14 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Pickup/Throw"",
+                    ""action"": ""PickupThrow"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
                     ""id"": ""8ba7f92b-bebe-459c-8b76-87149241d432"",
-                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""path"": ""<Gamepad>/start"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -189,18 +189,7 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""9fde3857-f45d-46be-8950-45b428ce290f"",
-                    ""path"": ""<Keyboard>/space"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Join"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""437b6060-0d47-47cc-b962-7f28a6a7cfcf"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/enter"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -217,7 +206,7 @@ public partial class @GameActions: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Drop = m_Player.FindAction("Drop", throwIfNotFound: true);
-        m_Player_PickupThrow = m_Player.FindAction("Pickup/Throw", throwIfNotFound: true);
+        m_Player_PickupThrow = m_Player.FindAction("PickupThrow", throwIfNotFound: true);
         m_Player_Join = m_Player.FindAction("Join", throwIfNotFound: true);
     }
 
