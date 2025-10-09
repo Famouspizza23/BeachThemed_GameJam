@@ -16,6 +16,8 @@ public class LobbySlot : MonoBehaviour
     public Button teamBButton;
     public Button readyButton;
 
+    public GameObject teamAPicked, teamBPicked;
+
     [Header("State")]
     [HideInInspector] public PlayerController playerController;
     public bool isReady = false;
@@ -47,6 +49,10 @@ public class LobbySlot : MonoBehaviour
         if (playerController == null) 
             return;
         playerController.ChooseTeamA();
+
+        teamAPicked.SetActive(true);
+        teamBPicked.SetActive(false);
+
         Debug.Log($"{playerController.name} chose Team A");
     }
 
@@ -55,6 +61,10 @@ public class LobbySlot : MonoBehaviour
         if (playerController == null) 
             return;
         playerController.ChooseTeamB();
+
+        teamAPicked.SetActive(false);
+        teamBPicked.SetActive(true);
+
         Debug.Log($"{playerController.name} chose Team B");
     }
 
